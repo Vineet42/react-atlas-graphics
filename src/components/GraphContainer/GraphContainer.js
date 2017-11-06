@@ -19,17 +19,17 @@ class GraphContainer extends React.Component{
 
             boxSelectionEnabled: false,
             autounselectify: true,
+            zoom: 1,
 
             style: cytoscape.stylesheet()
                 .selector('node')
                 .css({
                     'height': 80,
                     'width': 80,
-                    'background-fit': 'cover',
                     'border-color': '#000',
                     'border-width': 3,
                     'border-opacity': 0.5,
-                    'content': 'data(name)',
+                    'label': 'data(id)',
                     'text-valign': 'center',
                 })
                 .selector('edge')
@@ -43,23 +43,23 @@ class GraphContainer extends React.Component{
                 ,
             elements: {
                 nodes: [
-                    { data: { id: 'cat' } },
-                    { data: { id: 'bird' } },
-                    { data: { id: 'ladybug' } },
-                    { data: { id: 'aphid' } },
-                    { data: { id: 'rose' } },
-                    { data: { id: 'grasshopper' } },
-                    { data: { id: 'plant' } },
-                    { data: { id: 'wheat' } }
+                    { data: { id: 'Electricity' } },
+                    { data: { id: 'Conductor' } },
+                    { data: { id: 'Insulator' } },
+                    { data: { id: 'Semiconductor' } },
+                    { data: { id: 'Semimetal' } },
+                    { data: { id: 'Electron' } },
+                    { data: { id: 'Energy' } },
                 ],
                 edges: [
-                    { data: { source: 'cat', target: 'bird' } },
-                    { data: { source: 'bird', target: 'ladybug' } },
-                    { data: { source: 'bird', target: 'grasshopper' } },
-                    { data: { source: 'grasshopper', target: 'plant' } },
-                    { data: { source: 'grasshopper', target: 'wheat' } },
-                    { data: { source: 'ladybug', target: 'aphid' } },
-                    { data: { source: 'aphid', target: 'rose' } }
+                    { data: { source: 'Electricity', target: 'Conductor' } },
+                    { data: { source: 'Electricity', target: 'Insulator' } },
+                    { data: { source: 'Electricity', target: 'Semiconductor' } },
+                    { data: { source: 'Electricity', target: 'Semimetal' } },
+                    { data: { source: 'Electricity', target: 'Electron' } },
+                    { data: { source: 'Electron', target: 'Semiconductor' } },
+                    { data: { source: 'Semiconductor', target: 'Semimetal' } },
+                    { data: { source: 'Energy', target: 'Electricity' } }
                 ]
             },
 
@@ -67,7 +67,8 @@ class GraphContainer extends React.Component{
                 name: 'breadthfirst',
                 directed: true,
                 padding: 10
-            }
+            },
+            
             }); 
     }
 
@@ -77,8 +78,11 @@ class GraphContainer extends React.Component{
 
 render() {
   let cyStyle = {
-    height: '300px',
-    width: '800px',
+    height: '200px',
+    width: '600px',
+    position: 'relative',
+    top: '-60px',
+    left: '900px',
   };
 
   return (

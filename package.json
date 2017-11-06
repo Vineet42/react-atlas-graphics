@@ -7,10 +7,14 @@
     "cytoscape": "^3.2.5",
     "gh-pages": "^1.0.0",
     "gsap": "^1.20.2",
+    "inline-style-prefixer": "^3.0.8",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-fade": "^1.1.1",
+    "react-fade-in": "^0.1.5",
     "react-gsap-enhancer": "^0.3.0",
     "react-redux": "^5.0.6",
+    "react-typist": "^2.0.4",
     "redux": "^3.7.2"
   },
   "scripts": {

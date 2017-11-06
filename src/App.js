@@ -3,6 +3,7 @@ import KickedRotor from './graphics/AnimatedGraphics/KickedRotor/KickedRotor'
 import TestAnimation from './graphics/InteractiveGraphics/TestAnimation/TestAnimation'
 import BandStructure from './graphics/InteractiveGraphics/BandStructure/BandStructure'
 //import Graphic from './components/Graphic/Graphic'
+import GraphContainer from './components/GraphContainer/GraphContainer'
 
 import styles from './App.module.sass'
 
@@ -11,6 +12,7 @@ class App extends Component {
     return (
       <div className={ styles.App }>
 				<h1>The Quantum Atlas Graphics Gallery</h1>
+                <div> <GraphContainer /> </div>
 				<div className={ styles.gallery }>
 					<div className={ styles.galleryGrid }>
 						<BandStructure />

@@ -7,7 +7,10 @@
     "cytoscape": "^3.2.5",
     "gh-pages": "^1.0.0",
     "gsap": "^1.20.2",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-install": "^1.1.0",
     "inline-style-prefixer": "^3.0.8",
+    "marked": "^0.3.6",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-fade": "^1.1.1",
@@ -15,7 +18,9 @@
     "react-gsap-enhancer": "^0.3.0",
     "react-redux": "^5.0.6",
     "react-typist": "^2.0.4",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "semantic-ui": "^2.2.13",
+    "semantic-ui-react": "^0.76.0"
   },
   "scripts": {
     "deploy": "gh-pages -d build",
@@ -24,5 +29,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://jqi-dev.github.io/react-atlas-graphics"
+  "homepage": "https://Vineet42.github.io/react-atlas-graphics"
 }

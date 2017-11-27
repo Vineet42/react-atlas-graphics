@@ -78,11 +78,9 @@ class GraphContainer extends React.Component{
 
 render() {
   let cyStyle = {
-    height: '200px',
-    width: '600px',
-    position: 'relative',
-    top: '-60px',
-    left: '900px',
+    height: '15rem',
+    width: '23rem',
+    position: 'relative', 
   };
 
   return (
